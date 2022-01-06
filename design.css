@@ -1,13 +1,8 @@
 @charset "utf-8";
 
-.wrapper {
-  overflow: hidden;
-}
-
 header {
   background-color:white;
   height:80px;
-  width:100vw;
   border-bottom:1px solid silver;
   position: relative;
 
@@ -27,7 +22,14 @@ body {
   padding:0px;
 }
 
-.header-logo img   {
+.contents {
+  min-height: 100vh;
+  padding-bottom: 150px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.logo img   {
   float:left;
   padding: 25px 0 0 10%;
   width: 10%;
@@ -54,7 +56,7 @@ nav li:hover {
 }
 
 
-.front-top {
+.top {
   background-image: url("top-background.jpg");
   height:100px;
   background-size: cover;
@@ -63,8 +65,8 @@ nav li:hover {
   top:00px;
 }
 
-.top-contents h1 {
-  font-size:100px;
+.top__wrapper h1 {
+  font-size:8vw;
   letter-spacing:10px;
   opacity:0.8;
   position:absolute;
@@ -72,15 +74,59 @@ nav li:hover {
   left:100px;
 }
 
-.front-bot {
+.main__contents {
   height:650px;
-  background-color:#EEEEEE;
+  width: 80vw;
+  background-color:#eeeeee;
   font-family: 'Economica', sans-serif;
   text-align: center;
   overflow: hidden;
+  margin: 0 auto;
+
 }
 
-.front-bot img {
+.main__contents-javaScript {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+
+.contents__wrapper-form{
+  height: 20%;
+  min-height: 150px;
+  width: 37vw;
+}
+
+.contents__wrapper-date{
+  height: 20%;
+  min-height: 150px;
+  width: 37vw;
+}
+
+.contents__wrapper-pi--input{
+  height: 15%;
+  min-height: 100px;
+  width: 50vw;
+}
+
+.contents__wrapper-pi{
+  height: 20%;
+  min-height: 150px;
+  width: 50vw;
+}
+
+.main__contents-javaScript h4{
+  margin-bottom: 15px;
+}
+
+.orange {
+  color:#FF9900;
+}
+
+
+.bot__wrapper img {
   height: 90px;
   width: 100px;
 }
@@ -90,24 +136,23 @@ nav li:hover {
 footer {
   color:white;
   background-color:#222222;
-  height:200px;
+  height:150px;
   width:100%;
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 
-.btn-wrapper {
-  position:absolute;
-  right:0;
-  top:0;
-  padding-right: 12%;
-  padding-top: 10px;
+.btn__wrapper {
+  position: absolute;
+  top: 30px;
+  right: 40px;
 }
 
 .btn {
   color:white;
   display:block;
+  margin: 5px 5px;
   padding:8px 24px;
-  margin-top: 13%;
   margin-left: 30px;
 }
 
@@ -125,24 +170,21 @@ footer {
 }
 
 
-.info-wrapper {
-  width:40%;
-  margin: auto;
+.info__wrapper {
   text-align: center;
 }
 
-.author-info {
-  padding-top: 9%;
+.info__author {
+  padding-top: 30px;
   margin: 0 0;
 }
 
-.info-wrapper h2 {
-  font-size:40px;
+.info__wrapper h2 {
+  font-size:35px;
   font-weight: normal;
   margin:0 0;
 }
 
 .copyright {
-  margin-top: 5%;
   font-size: 10px;
 }

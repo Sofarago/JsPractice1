@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Ryo.N</title>
-    <meta name="mywebpage" content="実験用のページです">
-    <link rel="stylesheet" href="design.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
-  </head>
-  <body>
-    <div class="wrapper">
+<head>
+  <meta charset="utf-8">
+  <title>Ryo.N</title>
+  <meta name="mywebpage" content="実験用のページです">
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="contents">
     <header>
-      <div class="header-logo">
+      <div class="logo">
         <a href="https://sofarago.github.io/index/"><img src="web-logo.png" alt="logo"></a>
       </div>
       <nav>
@@ -22,29 +23,66 @@
         </ul>
       </nav>
     </header>
-    <div class="front-top">
-      <div class="top-contents">
-        <h1>2021/7/29(thu)</h1>
+    <div class="top">
+      <div class="top__wrapper">
+        <h1>Practice1-JS</h1>
       </div>
     </div>
-    <div class="front-bot">
-      
+    <div class="main__contents">
+      <section class="main__contents-javaScript">
+        <div class="contents__wrapper-form">
+          <h4>フォームから値の取得</h4>
+          <form action="#" id="form__search">
+            <input type="text" name="searchText">
+            <input type="submit" value="検索">
+          </form>
+          <p id="output" class="orange"></p>
+        </div>
+        <div class="contents__wrapper-date">
+          <h4>現在の日時</h4>
+          <p>アクセス日時：<span id="accessTime" class="orange"></p>
+          <p>時間の別表記 <span id="ampmTime" class="orange"></p>
+        </div>
+        <div class="contents__wrapper-pi--input">
+          <h4>円周率-小数点第何位で切り捨てますか？</h4>
+          <form action="#" id="form__pi-input">
+            <select id="digit">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <input type="submit" value="実行">
+          </form>
+        </div>
+        <div class="contents__wrapper-pi">
+          <h4>円周率-結果</h4>
+          <p>小数点第<span id="calcDigit" class="orange">〇</span>位での切り捨てると、</p>
+          <p>円周率は、<span id="calcPi" class="orange">XXXXX</span>になります</p>
+        </div>
+      </section>
     </div>
-    <div class="bot-wrapper">
-    <footer>
-      <div class="info-wrapper">
-        <p class="author-info">presented by</p>
-        <h2>Ryo.Nishio</h2>
-        <p class="copyright">© ○○ All Rights Reserved<</p>
-      </div>
-      <aside>
-      <div class="btn-wrapper">
-       <a href="https://twitter.com/hi_im_ryo" class="btn twitter"><span class="fab fa-twitter"></span>Twitter</a>
-       <a href="https://www.facebook.com/ryo.nishio.98" class="btn facebook"><span class="fab fa-facebook"></span>facebook</a>
-     </div>
-    </aside>
-    </footer>
+    <div class="bot__wrapper">
+      <footer>
+        <div class="info__wrapper">
+          <p class="info__author">presented by</p>
+          <h2>Ryo.Nishio</h2>
+          <div class="btn__wrapper">
+            <a href="https://twitter.com/hi_im_ryo" class="btn twitter"><span class="fab fa-twitter"></span>Twitter</a>
+            <a href="https://www.facebook.com/ryo.nishio.98" class="btn facebook"><span
+                class="fab fa-facebook"></span>facebook</a>
+          </div>
+          <p class="copyright">© ○○ test</p>
+        </div>
+      </footer>
     </div>
-    </div>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
