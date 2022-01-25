@@ -29,19 +29,37 @@ body {
   box-sizing: border-box;
 }
 
+.logo {
+  display: inline-block;
+  height: 80px;
+  overflow: hidden;
+}
+
+.logo a {
+  display: block;
+}
+
 .logo img   {
-  float:left;
-  padding: 25px 0 0 10%;
-  width: 10%;
+  height: 80px;
+  width: auto;
+  margin-left: 80px;
 }
 
 nav {
-  margin-top: 35px;
-  margin-left: 22%;
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  margin-right: 70px;
 }
 
 nav a {
   color:black;
+  padding: 30px 30px;
 }
 
 nav li {
@@ -70,8 +88,9 @@ nav li:hover {
   letter-spacing:10px;
   opacity:0.8;
   position:absolute;
-  top:0;
-  left:100px;
+  top: 50px;
+  left: 100px;
+  line-height: 0;
 }
 
 .main__contents {
