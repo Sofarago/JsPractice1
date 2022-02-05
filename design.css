@@ -73,7 +73,6 @@ nav li:hover {
   cursor:pointer;
 }
 
-
 .top {
   background-image: url("top-background.jpg");
   height:100px;
@@ -200,4 +199,66 @@ footer {
 
 .copyright {
   font-size: 10px;
+}
+
+@media screen and (max-width:600px) {
+	/*　画面サイズが600px以下の場合ここの記述が適用される　*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+  }
+
+  header a {
+    text-align: center;
+  }
+  
+  .logo img {
+    margin-left: initial;
+  }
+
+  nav ul {
+    margin-right: initial;
+  }
+
+  nav a {
+    padding: 0 15px;
+  }
+
+  .top__wrapper h1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+  .main__contents {
+    height: auto;
+    width: 100vw;
+  }
+
+  .main__contents-javaScript {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contents__wrapper-form{
+    width: auto;
+  }
+  
+  .contents__wrapper-date{
+    width: auto;
+  }
+  
+  .contents__wrapper-pi--input{
+    width: auto;
+  }
+  
+  .contents__wrapper-pi{
+    width: auto;
+  }
+
+  .btn__wrapper {
+    display: none;
+  }
 }
